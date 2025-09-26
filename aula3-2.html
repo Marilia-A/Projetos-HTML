@@ -1,11 +1,52 @@
-<!DOCTYPE html> 
-<html lang="pt-br"> 
-    <head> 
-        <meta charset="UTF-8"> <title>Início</title> 
-    </head> 
-    <body style="background-color: #406d89; padding: 20px;"> 
-        <h2 align="center">Sobre Nosso Site!</h2> 
-        <p> Sobre esta biblioteca, podemos dizer que a iniciativa se deve a avaliar os jogos de acordo com a opinião publica, inclusive há um sistema de ranking a partir das avaliações dos nossos usuários!</p> 
-        <p>Temos informações novas toda semana, verifique sempre para novidades!</p> 
-    </body> 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Biblioteca</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    h2 { text-align: center; }
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    figure {
+      margin: 0;
+      text-align: center;
+    }
+    img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    img:hover { transform: scale(1.05); }
+    figcaption {
+      font-size: 0.9em;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Biblioteca de Jogos</h2>
+
+  <div class="galeria">
+    <figure>
+      <img src="gris.jpg" width="300" height="150" alt="GRIS">
+      <figcaption> GRIS </figcaption>
+    </figure>
+    <figure>
+      <img src="neva.jpg" width="300" height="150" alt="NEVA">
+      <figcaption> NEVA </figcaption>
+    </figure>
+    <figure>
+      <img src="stardew.jpg" width="300" height="150" alt="NEVA">
+      <figcaption> STARDEW VALLEY </figcaption>
+    </figure>
+  </div>
+
+</body>
 </html>
